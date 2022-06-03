@@ -18,21 +18,17 @@ const routes: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'navbar',
+    path:'navbar',
     component: NavbarComponent,
-  },
-  // {
-  //   path:'navbar',
-  //   component: NavbarComponent,
-  //   children:
-  //   [
-  //     //{path:"add-client",component:ClientsFormComponent},
-  //     {path:"Clients",component:ClientListComponent},
-  //     {path:"Client",component:ClientItemComponent},
-  //     {path:"profile",component:ProfileComponent}
-  //   ]
+    children:
+    [
+      {path:"addClient",component:ClientFormComponent},
+      {path:"Clients",component:ClientListComponent},
+      {path:"Client",component:ClientItemComponent},
+      {path:"profile",component:ProfileComponent}
+    ]
 
-  // }
+  }
 ];
 
 @NgModule({

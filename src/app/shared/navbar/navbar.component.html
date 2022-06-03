@@ -19,11 +19,11 @@
             
             <mat-divider></mat-divider>
 
-            <button mat-button  [routerLink]="['add-agent']" (click)="sidenav.toggle()" class="menu-button">
+            <button mat-button  [routerLink]="['addClient']"  class="menu-button">
                 <mat-icon>plus</mat-icon>
                 <span>add Client</span>
             </button>
-            <button mat-button class="menu-button">
+            <button mat-button  [routerLink]="['addClient']" class="menu-button">
                 <mat-icon>person</mat-icon>
                 <span>Client List</span>
             </button>
@@ -42,7 +42,8 @@
         </mat-sidenav>
         <mat-sidenav-content>
             <div class="content mat-elevation-z8">
-                Main content here!
+               <p>thi is </p>
+                <router-outlet></router-outlet>
             </div>
         </mat-sidenav-content>
     </mat-sidenav-container> 
