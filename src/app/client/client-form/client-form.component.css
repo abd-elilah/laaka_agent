@@ -1,0 +1,19 @@
+
+mat-form-field {
+    display: block;
+    align-items: center;
+    border: none;
+
+
+}
+.cardForm
+{
+    justify-content: center;
+    width: max-content;
+
+    display: grid;
+}
+.btn{
+    background-color: black;
+}
+

@@ -19,12 +19,12 @@
             
             <mat-divider></mat-divider>
 
-            <button mat-button  [routerLink]="['addClient']"  class="menu-button">
-                <mat-icon>plus</mat-icon>
+            <button mat-button   [routerLink]="['addClient']"  class="menu-button" (click)="sidenav.toggle()">
+                <mat-icon (click)="sidenav.toggle()">add</mat-icon>
                 <span>add Client</span>
             </button>
-            <button mat-button  [routerLink]="['addClient']" class="menu-button">
-                <mat-icon>person</mat-icon>
+            <button mat-button   [routerLink]="['Clients']" class="menu-button" (click)="sidenav.toggle()">
+                <mat-icon>list</mat-icon>
                 <span>Client List</span>
             </button>
             <button mat-button class="menu-button">
@@ -42,7 +42,6 @@
         </mat-sidenav>
         <mat-sidenav-content>
             <div class="content mat-elevation-z8">
-               <p>thi is </p>
                 <router-outlet></router-outlet>
             </div>
         </mat-sidenav-content>
