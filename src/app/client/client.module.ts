@@ -7,6 +7,7 @@ import { ClientItemComponent } from './client-item/client-item.component';
 // import { ClientListComponent } from './client-list/client-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { ClientListComponent } from './client-list/client-list.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
