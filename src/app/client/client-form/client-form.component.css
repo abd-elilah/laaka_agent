@@ -9,20 +9,11 @@ mat-form-field {
 .cardForm
 {
     justify-content: center;
-<<<<<<< HEAD
-
-=======
->>>>>>> d3cce57603886e54f405b2d0cc68a6c79c0db15b
     width: max-content;
 
     display: grid;
 }
 .btn{
-<<<<<<< HEAD
-    /* background-color: black; */
-    color: blanchedalmond;
-=======
     background-color: black;
->>>>>>> d3cce57603886e54f405b2d0cc68a6c79c0db15b
 }
 
