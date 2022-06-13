@@ -14,5 +14,8 @@ table, th, td {
   border-collapse: collapse;
 }
 table {
-  width: 100%;
+  width: 60rem ;
+}
+.mat-elevation-z8{
+  background-color: rgba(235, 235, 233, 0.577);
 }
