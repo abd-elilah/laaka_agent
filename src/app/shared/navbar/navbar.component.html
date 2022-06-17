@@ -9,14 +9,11 @@
 
     </mat-toolbar-row>
 </mat-toolbar>
-    
+
     <mat-sidenav-container>
         <mat-sidenav #sidenav >
-            <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
 
-            <h4 class="name">John Smith</h4>
-            <p class="designation">Software Engineer</p>
-            
+
             <mat-divider></mat-divider>
 
             <button mat-button   [routerLink]="['addClient']"  class="menu-button" (click)="sidenav.toggle()">
@@ -45,7 +42,7 @@
                 <router-outlet></router-outlet>
             </div>
         </mat-sidenav-content>
-    </mat-sidenav-container> 
+    </mat-sidenav-container>
 
     <!-- angular material toolbar with sidenav -->
 

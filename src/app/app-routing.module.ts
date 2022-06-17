@@ -5,8 +5,8 @@ import { ProfileComponent } from './agent/profile/profile.component';
 import { ClientFormComponent } from './client/client-form/client-form.component';
 import { ClientItemComponent } from './client/client-item/client-item.component';
 import { ClientListComponent } from './client/client-list/client-list.component';
-// import { ClientListComponent } from './client/client-list/client-list.component';
 import { LoginComponent } from './login/login.component';
+// import { ClientListComponent } from './client/client-list/client-list.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
 const routes: Routes = [

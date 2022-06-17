@@ -1,1 +1,42 @@
-<p>login</p>
+<div class="container ">
+
+<div class="part part2">
+<mat-card class="card"  >
+  <mat-card-content>
+    <form   (ngSubmit)="Login()">
+      <h2>LOGIN</h2>
+
+      <mat-error  >
+        Username ou mot de passe non reconnu.
+      </mat-error>
+
+      <mat-form-field >
+        <input
+        matInput
+        placeholder="Username"
+
+        /><br>
+
+        <mat-error>
+          Entrez un username s'il vous plait.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field >
+        <input
+          matInput
+          placeholder="Password"
+
+        />
+
+        <mat-error>
+          Entrez un mot de passe s'il vous plait.
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" class="btn"  routerLinkActive="router-link-active" >Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+</div>
+</div>

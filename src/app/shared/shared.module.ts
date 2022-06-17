@@ -1,45 +1,3 @@
-// import { NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common';
-
-// import { SharedRoutingModule } from './shared-routing.module';
-// import { NavbarComponent } from './navbar/navbar.component';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MatToolbarModule } from '@angular/material/toolbar';
-// import { MatSidenavModule } from '@angular/material/sidenav';
-// import { MatButtonModule } from '@angular/material/button';
-// import { MatIconModule } from '@angular/material/icon';
-// import {MatDividerModule} from '@angular/material/divider';
-// import { MatFormFieldModule } from '@angular/material/form-field';
-// import { MatCardModule } from '@angular/material/card';
-
-
-// @NgModule({
-//   declarations: [
-//     NavbarComponent
-//   ],
-//   imports: [
-//     CommonModule,
-//     SharedRoutingModule,
-//     BrowserAnimationsModule,
-//     MatToolbarModule,
-//     MatSidenavModule,
-//     MatButtonModule,
-//     MatIconModule,
-//     MatDividerModule,
-//   ],
-//   exports: [
-//     BrowserAnimationsModule,
-//     MatToolbarModule,
-//     MatSidenavModule,
-//     MatButtonModule,
-//     MatIconModule,
-//     MatDividerModule,
-//     MatFormFieldModule,
-//     MatCardModule,
-//   ]
-// })
-// export class SharedModule { }
-
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -78,13 +36,14 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
 @NgModule({
   declarations: [ NavbarComponent],
   imports: [
-  CommonModule,
+    CommonModule,
    MatCardModule,
    SharedRoutingModule,
     MatCheckboxModule,
@@ -119,10 +78,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatSortModule,
     MatPaginatorModule,
     MatFormFieldModule,
-
+    FlexLayoutModule,
     HttpClientModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+
 
   ],
   exports: [
@@ -130,7 +90,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     CommonModule,
     HttpClientModule,
-  
+    FlexLayoutModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -166,7 +126,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatSidenavModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+
   ],
 })
 export class SharedModule { }

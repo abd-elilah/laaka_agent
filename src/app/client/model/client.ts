@@ -8,8 +8,9 @@ export class Client {
       public username: string,
       public email: string,
       public phone: string,
-      public role: string)
+      public role: string,
+      )
     {
-  
+
     }
 }
