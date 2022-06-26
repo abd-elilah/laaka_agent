@@ -22,6 +22,8 @@ import {CdkTableModule} from '@angular/cdk/table';
 import { MatSortModule } from '@angular/material/sort';
 import { ClientListComponent } from './client/client-list/client-list.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { ClientService } from './client/service/client.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -46,8 +48,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     CdkTableModule,
     MatSortModule,
     MatPaginatorModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ClientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

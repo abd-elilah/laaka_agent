@@ -1,38 +1,41 @@
 
     <mat-card  class="cardForm">
+      <div *ngFor="let client of clients" >
+        <div>{{client.nom}}</div>
+      </div>
     <mat-card class="cardForm">
 
       <mat-card-content>
-        <form>
+        <form >
           <div class="form-row">
             <div class="form-group col-md-6">
               <mat-form-field>
-                <input matInput placeholder="first Name" />
+                <input matInput placeholder="first Name" ngModel [ngModelOptions]="{standalone: true}" />
               </mat-form-field>
             </div>
             <div class="form-group col-md-6">
               <mat-form-field>
-                <input matInput placeholder="last name" />
+                <input matInput placeholder="last name" ngModel [ngModelOptions]="{standalone: true}"/>
               </mat-form-field>
             </div>
             
             <div class="form-group col-md-6">
               <mat-form-field>
-                <input matInput placeholder="phone" />
+                <input matInput placeholder="phone" name="phone" ngModel [ngModelOptions]="{standalone: true}"/>
               </mat-form-field>
             </div>
             <div class="form-group col-md-6">
               <mat-form-field>
-                <input matInput placeholder="email" />
+                <input matInput placeholder="email"  name="email" ngModel [ngModelOptions]="{standalone: true}" />
               </mat-form-field>
             </div>
             <div class="form-group col-md-6">
               <mat-form-field>
-                <input matInput placeholder="password" />
+                <input matInput placeholder="password" name="password" ngModel [ngModelOptions]="{standalone: true}"/>
               </mat-form-field>
             </div>
           </div>
-          <button mat-raised-button color="primary"  class="btn" routerLinkActive="router-link-active">Add client</button>
+          <button mat-raised-button color="primary"  class="btn" routerLinkActive="router-link-active" >Add client</button>
   
   
         </form>
