@@ -9,13 +9,17 @@ import { Client } from '../model/client';
 })
 export class ClientService {
   private url= environment.apiBaseUrl;
+  
 
   constructor(private http:HttpClient) { }
-  public getClient(): Observable<Client[]> {
-return this.http.get<Client[]>(`${this.url}/Client/clients`);
-  }
+//   public getClient(): Observable<Client[]> {
+// return this.http.get<Client[]>(`${this.url}/Client/clients`);
+//   }
+public getClient(): Observable<Client[]> {
+  return this.http.get<Client[]>(`${this.url}/Client/clients`);
+}
   public addClient(client: Client): Observable<Client> {
-    return this.http.post<Client>(`${this.url}/Admin/addAdmin`,Client);
+    return this.http.post<Client>(`${this.url}/Client/addClient/allow-cors`,Client);
       }
 
   public updateClient(client : Client): Observable<Client> {

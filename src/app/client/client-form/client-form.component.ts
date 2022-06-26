@@ -22,14 +22,26 @@ export class ClientFormComponent implements OnInit {
   ngOnInit(): void {
     this.getClient;
   }
-  // onSubmit(data: any) {
-  //   const url = 'http://http://localhost:4040/Admin/addAdmin';
-  //   this.httpClient.post(url, data)
-  //     .subscribe((result) => {
-  //       this.ngOnInit(); //reload the table
-  //     });
-  //   // this.modalService.dismissAll(); //dismiss the modal
-  // }
+  onSubmit(addClient :NgForm): void {
+    this.clientService.addClient(addClient.value).subscribe(
+      (response: Client) => {
+    
+        console.log(response);
+        this.getClient() ;
+        addClient.reset();
+      },
+      (error : HttpErrorResponse)=>{
+        alert(error.message);
+      }
+      );
+   
+    // const url = 'http://http://localhost:4040/Admin/addAdmin';
+    // this.httpClient.post(url, data)
+    //   .subscribe((result) => {
+    //     this.ngOnInit(); //reload the table
+    //   });
+    // this.modalService.dismissAll(); //dismiss the modal
+  }
 
   public getClient(): void {
     this.clientService.getClient().subscribe(

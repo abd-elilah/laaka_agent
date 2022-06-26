@@ -3,7 +3,7 @@ mat-form-field {
     display: block;
     align-items: center;
     border: none;
-    width: 80rem;
+    /* width: 80rem; */
 
 }
 .cardForm

@@ -6,7 +6,7 @@
     <mat-card class="cardForm">
 
       <mat-card-content>
-        <form >
+        <form #addClient="ngForm"  (ngSubmit)="onSubmit(addClient)">
           <div class="form-row">
             <div class="form-group col-md-6">
               <mat-form-field>

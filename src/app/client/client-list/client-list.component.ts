@@ -68,14 +68,25 @@ export class ClientListComponent implements OnInit {
    }
 
 
-   public getClient(): void {
+  //  public getClient(): void {
+  //   this.clientService.getClient().subscribe(
+  //     (response: Client[]) => {
+  //       this.clients = response;
+  //     },
+  //     (error : HttpErrorResponse)=>{
+  //       alert(error.message);
+  //     }
+  //     ); 
+  // }
+  public getClient(): void {
     this.clientService.getClient().subscribe(
       (response: Client[]) => {
         this.clients = response;
+        console.log(this.clients);
       },
-      (error : HttpErrorResponse)=>{
+      (error: HttpErrorResponse) => {
         alert(error.message);
       }
-      );
+    );
   }
 }
